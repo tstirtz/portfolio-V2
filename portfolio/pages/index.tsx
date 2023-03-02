@@ -1,30 +1,40 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { AppProps } from "next/app";
 
-export default function Home({ props }: AppProps) {
+export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="text-stark">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav>
-        <ul>
-          <li>
-            <Link href="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link href="/dev-projects">Dev Projects</Link>
-          </li>
-          <li>
-            <Link href="/art">Art</Link>
-          </li>
-        </ul>
+        <div className="navbar bg-base-100 mt-8">
+          <ul>
+            <li>
+              <Link className="btn btn-ghost normal-case text-xl" href="/blog">
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="btn btn-ghost normal-case text-xl"
+                href="/dev-projects"
+              >
+                Dev Projects
+              </Link>
+            </li>
+            <li>
+              <Link className="btn btn-ghost normal-case text-xl" href="/art">
+                Art
+              </Link>
+            </li>
+          </ul>
+        </div>
       </nav>
 
-      <main>
+      {/* <main>
         <h1 className={styles.title}>
           Learn <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -62,17 +72,17 @@ export default function Home({ props }: AppProps) {
             </p>
           </a>
         </div>
-      </main>
+      </main> */}
 
       <footer>
-        <a
+        {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{" "}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+        </a> */}
       </footer>
 
       <style jsx>{`
