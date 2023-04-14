@@ -1,6 +1,6 @@
 import Script from "next/script";
 import { useRef } from "react";
-import TextEditor from "../../components/TextEditor";
+// import TextEditor from "../../components/TextEditor";
 
 function WritingPage() {
   const editorRef = useRef(null);
@@ -15,7 +15,7 @@ function WritingPage() {
         src="/path/or/uri/to/tinymce.min.js"
         referrerPolicy="origin"
       ></Script> */}
-      <TextEditor
+      {/* <TextEditor
         onInit={(evt: Event, editor: null) => (editorRef.current = editor)}
         initialValue="<p>This is the initial content of the editor.</p>"
         init={{
@@ -41,7 +41,7 @@ function WritingPage() {
           content_style:
             "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
         }}
-      />
+      /> */}
     </main>
   );
 }

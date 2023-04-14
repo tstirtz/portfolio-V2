@@ -8,10 +8,10 @@ export default function Home() {
       <Head>
         <title>Tyler Stirtz Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
-        <script
+        {/* <script
           src="https://cdn.tiny.cloud/1/xa8bj0gpu9r7bkldwuvl0rm30jowdh5sgiecd30ferstgi56/tinymce/6/tinymce.min.js"
           referrerPolicy="origin"
-        ></script>
+        ></script> */}
       </Head>
       {/* <main>
       </main> */}
